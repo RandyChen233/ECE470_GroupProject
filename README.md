@@ -1,7 +1,7 @@
 ## **This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign.** ##
 
 ## How to use
-- The code is to be executed in a pre-built virtual environment <a href="http://coecsl.ece.illinois.edu/ece470/fall21/ECE470VM.zip" target="_blank">ECE470</a> in <a href="[http://coecsl.ece.illinois.edu/ece470/fall21/ECE470VM.zip](https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-player/workstation-player-evaluation.html.html)" target="_blank">VMware Workstation 16 Player</a>
+- The code is to be executed in a pre-built virtual environment <a href="http://coecsl.ece.illinois.edu/ece470/fall21/ECE470VM.zip" target="_blank">ECE470</a> in <a href="https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-player/workstation-player-evaluation.html.html" target="_blank">VMware Workstation 16 Player</a>
 - In a *Ubuntu* terminal run **source devel/setup.bash**
 - In the same terminal run **roslaunch ur3_driver ur3_gazebo.launch** to open simulation software
 - In a new *Ubuntu* terminal ,run **rosrun lab2_pkg.py lab2_spawn.py** to input the blocks in the simulation
