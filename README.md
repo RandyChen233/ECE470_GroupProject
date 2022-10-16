@@ -13,7 +13,7 @@
 - Initialize Q which is a 2D array that consists of the robot's orientation at each position(E.g **Q11** is the orientation of the robot when it is at the first tower position with $3$ blocks stacked, **Q21** is the orientation of the robot when it is at the second tower position with $3$ blocks stacked).
 
 
-<gripper_callback(msg)>
+*gripper_callback(msg)*
 - Takes in the info published from ur3/gripper_input
 - gets the state of suction cup based on the input
 
