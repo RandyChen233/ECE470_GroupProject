@@ -21,13 +21,16 @@
 - Takes in the new angle position data published
 - 
 
-- gripper(pub_cmd, loop_rate, io_0)
+**gripper(pub_cmd, loop_rate, io_0)**
+-
 
 
-- move_arm(pub_cmd, loop_rate, dest, vel, accel)
+**move_arm(pub_cmd, loop_rate, dest, vel, accel)**
+-
 
-- move_block(pub_cmd, loop_rate, start_loc, start_height, end_loc, end_height)
+**move_block(pub_cmd, loop_rate, start_loc, start_height, end_loc, end_height)**
+-
 
-- main()
-               
+**main()**
+-               
          
