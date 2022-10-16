@@ -18,11 +18,11 @@
 - gets the state of suction cup based on the input
 
 **position_callback(msg)**
-- Takes in the new angle position data published
-- 
+- Callback function thaat takes in the new angle position data published
+
 
 **gripper(pub_cmd, loop_rate, io_0)**
--
+- 
 
 
 **move_arm(pub_cmd, loop_rate, dest, vel, accel)**
