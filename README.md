@@ -1,6 +1,7 @@
 ## **This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign.** ##
 
 ## How to use
+- The code is to be executed in VMware Workstation 16 Player in a pre-built virtual environment *ECE470.vmx*
 - In a *Ubuntu* terminal run **source devel/setup.bash**
 - In the same terminal run **roslaunch ur3_driver ur3_gazebo.launch** to open simulation software
 - In a new *Ubuntu* terminal ,run **rosrun lab2_pkg.py lab2_spawn.py** to input the blocks in the simulation
