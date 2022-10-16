@@ -22,15 +22,15 @@
 
 
 **gripper(pub_cmd, loop_rate, io_0)**
-- 
+- A function that controls the gripper based on the current position of the gripper and desired position of the block.
 
 
 **move_arm(pub_cmd, loop_rate, dest, vel, accel)**
--
+- A function that controls movement of the robotic arm.
 
 **move_block(pub_cmd, loop_rate, start_loc, start_height, end_loc, end_height)**
--
+- A function that controls where each block is placed after it has been picked up.
 
 **main()**
--               
+- Main loop that determines how the UR3 robot moves according to user input           
          
