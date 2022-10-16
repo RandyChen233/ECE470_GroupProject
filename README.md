@@ -9,4 +9,19 @@
 - Input **{1,2,3}** for start and end towers 
 
 ## Code Walk Through
+- Initialize Q matrix
 
+- gripper_callback(msg)
+
+- position_callback(msg)
+
+- gripper(pub_cmd, loop_rate, io_0)
+
+
+- move_arm(pub_cmd, loop_rate, dest, vel, accel)
+
+- move_block(pub_cmd, loop_rate, start_loc, start_height, end_loc, end_height)
+
+- main()
+               
+         
