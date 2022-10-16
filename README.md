@@ -18,6 +18,7 @@
 - gets the state of suction cup based on the input
 
 **position_callback(msg)**
+- Takes in the new angle position data published
 - 
 
 - gripper(pub_cmd, loop_rate, io_0)
