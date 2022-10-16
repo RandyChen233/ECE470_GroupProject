@@ -1,7 +1,6 @@
 ## **This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign.** ##
 
 ## How to use
-- The code is to be executed in VMware Workstation 16 Player in a pre-built virtual environment *ECE470.vmx*
 - In a *Ubuntu* terminal run **source devel/setup.bash**
 - In the same terminal run **roslaunch ur3_driver ur3_gazebo.launch** to open simulation software
 - In a new *Ubuntu* terminal ,run **rosrun lab2_pkg.py lab2_spawn.py** to input the blocks in the simulation
@@ -27,10 +26,10 @@
 
 
 *move_arm(pub_cmd, loop_rate, dest, vel, accel)*
-- A function that controls movement of the robotic arm.
+- A function that moves the robotic arm using the input destination, velocity and acceleration.
 
 *move_block(pub_cmd, loop_rate, start_loc, start_height, end_loc, end_height)*
-- A function that controls where each block is placed after it has been picked up.
+- A function that moves one block from start position to end position.
 
 *main()*
 - Main loop that determines how the UR3 robot moves according to user input           
