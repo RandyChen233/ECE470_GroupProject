@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import rospy
 import rospkg
 import os
@@ -63,8 +62,9 @@ if __name__ == '__main__':
     # Missing block ?
     missing_block = None
     while missing_block is None:
-        missing_block = input("Missing Block?(y/n): ")
+        missing_block = raw_input("Missing Block?(y/n): ")
         missing_block = str(missing_block)
+     
         if (missing_block != 'y') and (missing_block != 'n'):
             missing_block = None
             print("Wrong input \n\n")
