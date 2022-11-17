@@ -87,6 +87,7 @@
       </geom:plane>
     </body:plane>
   </model:physical>
+  
 
 <!--
   <model:physical name="walls">
