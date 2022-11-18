@@ -1,6 +1,6 @@
 
 # Christmas-tree decorating robot ##
-<img align="center" src="https://media/tree.png">
+
 ## Description
 - The code is to be executed in a pre-built virtual environment <a href="http://coecsl.ece.illinois.edu/ece470/fall21/ECE470VM.zip" target="_blank">ECE470</a> in <a href="https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-player/workstation-player-evaluation.html.html" target="_blank">VMware Workstation 16 Player</a>
 - This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign
