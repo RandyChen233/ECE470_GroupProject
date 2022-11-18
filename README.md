@@ -1,8 +1,9 @@
-<!-- ## **This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign.** ## -->
-## Christmas-tree decorating robot ##
+
+# Christmas-tree decorating robot ##
 
 ## Description
 - The code is to be executed in a pre-built virtual environment <a href="http://coecsl.ece.illinois.edu/ece470/fall21/ECE470VM.zip" target="_blank">ECE470</a> in <a href="https://www.vmware.com/content/vmware/vmware-published-sites/us/products/workstation-player/workstation-player-evaluation.html.html" target="_blank">VMware Workstation 16 Player</a>
+- This is the final course project for **ECE470 - Introduction to Robotics** course at the University of Illinois at Urbana-Champaign
 
 <!-- - In a new *Ubuntu* terminal ,run **rosrun lab2_pkg.py lab2_spawn.py** to input the blocks in the simulation -->
 <!-- - Enter **3** and **n** to input 3 blocks -->
