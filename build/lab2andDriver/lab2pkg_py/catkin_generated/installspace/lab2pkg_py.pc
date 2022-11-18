@@ -1,4 +1,4 @@
-prefix=/home/ur3/catkin_jushanc2/install
+prefix=/home/ur3/ECE470_GroupProject/install
 
 Name: lab2pkg_py
 Description: Description of lab2pkg_py

@@ -5,26 +5,14 @@
     <include>
       <uri>model://pine_tree</uri>
         <pose>2.0 0 0 0 0 0</pose>
-        <collision name="collision_00">
-          <geometry>
-            <box>
-              <size>0.3 0.3 0.3</size>
-            </box>
-          </geometry>
-        </collision>
-
+       
+            
     </include> 
     
     <include>
       <uri>model://table</uri>
-        <pose>0 0 0 0 0 0</pose>
-        <collision name="collision_01">
-          <geometry>
-            <box>
-              <size>0.1 0.1 0.1</size>
-            </box>
-          </geometry>
-        </collision>
+	<pose>0 0 0.1 0 0 0 </pose>       
+        <static>true</static>
     </include>
 
   </world>

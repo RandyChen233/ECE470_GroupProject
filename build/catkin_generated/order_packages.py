@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/ur3/catkin_jushanc2/src"
+source_root_dir = "/home/ur3/ECE470_GroupProject/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/ur3/catkin_jushanc2/devel;/opt/ros/kinetic".split(';') if "/home/ur3/catkin_jushanc2/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/opt/ros/kinetic".split(';') if "/opt/ros/kinetic" != "" else []
