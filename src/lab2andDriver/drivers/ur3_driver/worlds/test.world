@@ -15,5 +15,11 @@
         <static>true</static>
     </include>
 
+    <include>
+      <uri>model://cricket_ball</uri>
+	<pose
+    
+    
+
   </world>
 </sdf>
