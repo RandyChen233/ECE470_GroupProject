@@ -16,7 +16,7 @@
 
 ## How to use
 - In a *Ubuntu* terminal run **source devel/setup.bash** to properly set up the catkin directory; alternatively, add **source devel/setup.bash** to **~/.bashrc** the **.bash** file is sourced automatically each time a new terminal is opened 
-- In the same terminal run **roslaunch ur3_driver ur3_gazebo.launch** to initiate the UR3 robot in the Gazebo simulation engine
+- In the same terminal run **roslaunch ur3_driver ur3_gazebo_git.launch** to initiate the UR3 robot in the Gazebo simulation engine
 - By default, when the above command is run the UR3 robot and an **empty.world** Gazebo environment shows up;
   to insert external models, include the model parameters in **test.world** located at this path: */src/lab2andDriver/drivers/ur3_driver/worlds*
 - **test.world** is our customized configuration file added to **ur3_gazebo.launch** located at this path */src/lab2andDriver/drivers/ur3_driver/launch*
