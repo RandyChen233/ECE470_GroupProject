@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot name="block">
-<static>true</static>
+<static>1</static>
 <link name="base_link">
 
   <collision>
