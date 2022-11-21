@@ -57,3 +57,6 @@
 *main()*
 - Main loop that determines how the UR3 robot moves according to user input           
           -->
+          
+## References
+http://sdformat.org/spec?ver=1.9&elem=sdf
