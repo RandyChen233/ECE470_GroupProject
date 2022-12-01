@@ -121,7 +121,7 @@ def gripper(pub_cmd, loop_rate, io_0):
             spin_count = 0
 
         spin_count = spin_count + 1
-     
+
     return error
 
 
@@ -340,6 +340,11 @@ def main():
         print("Please just enter the character 1 2 or 3  \n\n")
 
     last_tower = 3 - start_tower - end_tower
+
+
+
+
+
 
 
     ############### Your Code End Here ###############

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import rospy
 import rospkg
 import os
@@ -19,16 +20,14 @@ if __name__ == '__main__':
     rospack = rospkg.RosPack()
     # Get path to yaml
     lab2_path = rospack.get_path('lab2pkg_py')
-    # yamlpath = os.path.join(lab2_path, 'scripts', 'lab2_data.yaml')
-    yamlpath = os.path.join(lab2_path, 'scripts', 'lab2_data_copy.yaml')
+    yamlpath = os.path.join(lab2_path, 'scripts', 'lab2_data.yaml')
 
     with open(yamlpath, 'r') as f:
         try:
             # Load the data as a dict
             data = yaml.load(f)
             # Load block position
-            # block_xy_pos = data['block_xy_pos']
-            block_xyz_pos = data['block_xyz_pos']
+            block_xy_pos = data['block_xy_pos']
             
         except:
             sys.exit()
@@ -64,9 +63,8 @@ if __name__ == '__main__':
     # Missing block ?
     missing_block = None
     while missing_block is None:
-        missing_block = raw_input("Missing Block?(y/n): ")
+        missing_block = input("Missing Block?(y/n): ")
         missing_block = str(missing_block)
-     
         if (missing_block != 'y') and (missing_block != 'n'):
             missing_block = None
             print("Wrong input \n\n")
@@ -83,8 +81,8 @@ if __name__ == '__main__':
         # Spawn three blocks
         for height in range(3):
             block_name = 'block' + str(height + 1)
-            pose = Pose(Point(block_xyz_pos[starting_location][height][0], 
-                            block_xyz_pos[starting_location][height][1], block_xyz_pos[starting_location][height][2]), Quaternion(0, 0, 0, 0))
+            pose = Pose(Point(block_xy_pos[starting_location][height][0], 
+                            block_xy_pos[starting_location][height][1], 0), Quaternion(0, 0, 0, 0))
             spawn(block_name, open(block_paths[2-height], 'r').read(), 'block', pose, 'world')
     
     else:
@@ -94,7 +92,6 @@ if __name__ == '__main__':
             if height == missing_block_height:
                 continue
             block_name = 'block' + str(height + 1)
-            pose = Pose(Point(block_xyz_pos[starting_location][height][0], 
-                            block_xyz_pos[starting_location][height][1], block_xyz_pos[starting_location][height][2]), Quaternion(0, 0, 0, 0))
+            pose = Pose(Point(block_xy_pos[starting_location][height][0], 
+                            block_xy_pos[starting_location][height][1], 0), Quaternion(0, 0, 0, 0))
             spawn(block_name, open(block_paths[2-height], 'r').read(), 'block', pose, 'world')
-
