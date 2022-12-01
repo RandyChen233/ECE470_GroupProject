@@ -337,7 +337,7 @@
       </visual>
       <collision>
         <geometry>
-          <box size="0.01 0.01 0.01"/>
+          <box size="0.048 0.101 0.04"/>
         </geometry>
         <surface>
           <friction>
@@ -347,7 +347,7 @@
             </ode>
           </friction>
         </surface>
-        <origin rpy="0 0 0" xyz="-0.01 0 0"/>
+        <origin rpy="0 0 0" xyz="0.023 0.02 0.0"/>
       </collision>
       <inertial>
         <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>

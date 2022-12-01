@@ -24,7 +24,7 @@
   <node name="spawn_base_plate" pkg="gazebo_ros" type="spawn_model" args="-file $(find ur_description)/urdf/base_plate.urdf -urdf -model plate -x -0.15 -y 0.15 " respawn="false" output="screen" />
 
   <!-- push robot_description to factory and spawn robot in gazebo -->
-  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot -x -0.15 -y 0.15 -z 1.05" respawn="false" output="screen" />
+  <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot -x 0.1 -y 0.0 -z 1.15" respawn="false" output="screen" />
 
   <include file="$(find ur_gazebo)/launch/controller_utils.launch"/>
 
