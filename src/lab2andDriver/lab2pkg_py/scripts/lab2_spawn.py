@@ -22,6 +22,7 @@ if __name__ == '__main__':
     lab2_path = rospack.get_path('lab2pkg_py')
     yamlpath = os.path.join(lab2_path, 'scripts', 'lab2_data.yaml')
 
+
     with open(yamlpath, 'r') as f:
         try:
             # Load the data as a dict
@@ -63,7 +64,7 @@ if __name__ == '__main__':
     # Missing block ?
     missing_block = None
     while missing_block is None:
-        missing_block = input("Missing Block?(y/n): ")
+        missing_block = raw_input("Missing Block?(y/n): ")
         missing_block = str(missing_block)
         if (missing_block != 'y') and (missing_block != 'n'):
             missing_block = None
@@ -82,7 +83,7 @@ if __name__ == '__main__':
         for height in range(3):
             block_name = 'block' + str(height + 1)
             pose = Pose(Point(block_xy_pos[starting_location][height][0], 
-                            block_xy_pos[starting_location][height][1], 0), Quaternion(0, 0, 0, 0))
+                            block_xy_pos[starting_location][height][1], 1.0), Quaternion(0, 0, 0, 0))
             spawn(block_name, open(block_paths[2-height], 'r').read(), 'block', pose, 'world')
     
     else:
@@ -93,5 +94,5 @@ if __name__ == '__main__':
                 continue
             block_name = 'block' + str(height + 1)
             pose = Pose(Point(block_xy_pos[starting_location][height][0], 
-                            block_xy_pos[starting_location][height][1], 0), Quaternion(0, 0, 0, 0))
+                            block_xy_pos[starting_location][height][1], 1.0), Quaternion(0, 0, 0, 0))
             spawn(block_name, open(block_paths[2-height], 'r').read(), 'block', pose, 'world')

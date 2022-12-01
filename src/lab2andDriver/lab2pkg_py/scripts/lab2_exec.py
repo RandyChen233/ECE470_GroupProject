@@ -267,6 +267,7 @@ def main():
     # Get path to yaml
     lab2_path = rospack.get_path('lab2pkg_py')
     yamlpath = os.path.join(lab2_path, 'scripts', 'lab2_data.yaml')
+ 
 
     with open(yamlpath, 'r') as f:
         try:
